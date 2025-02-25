@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile Payment App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-screen bg-slate-800">
+    <section class="max-w-xl mx-auto h-screen bg-slate-200">
+      <section class="relative h-1/4 mb-14">
+        <figure
+          class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-1/2 z-0"
+        >
+          <img src="./assets/bg.png" alt="" class="w-full" />
+        </figure>
+        <figure
+          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10"
+        >
+          <img src="./assets/Group.png" alt="" class="w-full" />
+        </figure>
+      </section>
+      <div class="hero">
+        <div class="hero-content">
+          <div class="card w-96 bg-base-100 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="fieldset-label">Mobile Number</label>
+                <input
+                  type="email"
+                  class="input"
+                  placeholder="Enter your number"
+                  id="mobile-number"
+                  required
+                />
+                <label class="fieldset-label">4 Digit PIN</label>
+                <input
+                  type="password"
+                  class="input"
+                  id="pin"
+                  placeholder="Enter 4 Digit Pin"
+                  required
+                />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <button class="btn btn-success mt-4 text-white" id="login-btn">
+                  Login
+                </button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
