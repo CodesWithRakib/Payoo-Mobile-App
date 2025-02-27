@@ -19,7 +19,7 @@
         <img src="./assets/Group.png" alt="logo here" />
       </figure>
       <nav>
-        <h3>$ <span>45000</span></h3>
+        <h3>$ <span id="main-balance">45000</span></h3>
         <p>Available Balance</p>
       </nav>
       <div class="border-2 border-white p-2 rounded-lg flex gap-2">
@@ -285,12 +285,14 @@
           <input
             type="number"
             class="input"
+            id="account-number"
             placeholder="Enter 11 digit account number"
           />
           <label class="fieldset-label">Amount to Add</label>
           <input
             type="number"
             class="input"
+            id="amount"
             placeholder="Add Amount to withdraw"
           />
 
@@ -298,10 +300,14 @@
           <input
             type="number"
             class="input"
+            id="pin-number"
             placeholder="Enter 4 digit pin number"
           />
 
-          <button class="btn bg-blue-500 text-white w-3/5 mt-4 rounded-full">
+          <button
+            class="btn bg-blue-500 text-white w-3/5 mt-4 rounded-full"
+            id="add-money-btn"
+          >
             Add Money
           </button>
         </fieldset>
@@ -317,12 +323,14 @@
           <input
             type="number"
             class="input"
+            id="withdraw-account-number"
             placeholder="Enter 11 digit account number"
           />
           <label class="fieldset-label">Amount to Add</label>
           <input
             type="number"
             class="input"
+            id="withdraw-amount"
             placeholder="Add Amount to withdraw"
           />
 
@@ -330,15 +338,20 @@
           <input
             type="number"
             class="input"
+            id="withdraw-pin-number"
             placeholder="Enter 4 digit pin number"
           />
 
-          <button class="btn bg-blue-500 text-white w-3/5 mt-4 rounded-full">
+          <button
+            class="btn bg-blue-500 text-white w-3/5 mt-4 rounded-full"
+            id="withdraw-btn"
+          >
             Withdraw Money
           </button>
         </fieldset>
       </section>
     </main>
+    <script src="./utilities/utilities.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
